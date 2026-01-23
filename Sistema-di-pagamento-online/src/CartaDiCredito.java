@@ -25,7 +25,7 @@ public class CartaDiCredito {
         } else if (scadenzaAnno == anno && scadenzaMese < mese){
             return true;
         }else{
-            return false
+            return false;
         }
     }
     public boolean hasSaldo(double importo) {
@@ -43,5 +43,4 @@ public class CartaDiCredito {
     public String getNumero() {
         return numero;
     }
-}
 }
