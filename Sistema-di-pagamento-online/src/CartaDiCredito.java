@@ -28,4 +28,20 @@ public class CartaDiCredito {
             return false
         }
     }
+    public boolean hasSaldo(double importo) {
+        return saldo >= importo;
+    }
+
+    public void scalaSaldo(double importo) {
+        saldo -= importo;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public String getNumero() {
+        return numero;
+    }
+}
 }
