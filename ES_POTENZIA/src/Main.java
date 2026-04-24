@@ -1,9 +1,19 @@
 public class Main {
-    public static void main(String[] args) {
-        int ciao = 2;
+    public static void main(String[] args) throws InterruptedException {
+        Sportello s = new Sportello();
 
-        for (int i = 0; i < ciao; i++) {
-            System.out.println("GG");
+        Cliente[] clienti = new Cliente[8];
+
+        for (int i = 0; i < 8; i++) {
+            clienti[i] = new Cliente(s, "C" + i);
+            clienti[i].start();
         }
+
+        for (Cliente c : clienti) {
+            c.join();
+        }
+
+        System.out.println("Serviti: " + Cliente.getServiti());
+        System.out.println("Rinunce: " + Cliente.getRinunce());
     }
 }
