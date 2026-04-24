@@ -5,7 +5,7 @@ public class Main {
         Cliente[] clienti = new Cliente[8];
 
         for (int i = 0; i < 8; i++) {
-            clienti[i] = new Cliente(s, "C" + i);
+            clienti[i] = new Cliente(s, "Cliente" + i);
             clienti[i].start();
         }
 
