@@ -3,7 +3,7 @@ public class Main {
     private static final int GATE_INTERNAZIONALI = 2;
 
     public static void main(String[] args) throws InterruptedException {
-        //ALT+ENTER
+
         Aeroporto aeroporto = new Aeroporto(GATE_NAZIONALI, GATE_INTERNAZIONALI);
 
         Volo[] voli = {
@@ -12,8 +12,8 @@ public class Main {
                 new Volo("nex-03", aeroporto, TipoVolo.NAZIONALE),
                 new Volo("nex-04", aeroporto, TipoVolo.NAZIONALE),
                 new Volo("nex-05", aeroporto, TipoVolo.NAZIONALE),
-                new Volo("nex-066", aeroporto, TipoVolo.INTERNAZIONALE),
-                new Volo("nex-0779", aeroporto, TipoVolo.INTERNAZIONALE),
+                new Volo("nex-06", aeroporto, TipoVolo.INTERNAZIONALE),
+                new Volo("nex-07", aeroporto, TipoVolo.INTERNAZIONALE),
         };
 
         for (Volo v : voli) v.start();

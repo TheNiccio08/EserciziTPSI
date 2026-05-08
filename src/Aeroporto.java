@@ -28,7 +28,7 @@ public class Aeroporto {
         try {
             while (gateNazionaliLiberi == 0) attendiNazionali.await();
             gateNazionaliLiberi--;
-            System.out.println("VRROM VROoom");
+            System.out.println("VRROM VRROM");
         } finally {
             lock.unlock();
         }
